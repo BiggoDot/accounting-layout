@@ -1,0 +1,25 @@
+$blue-color: #1C64F2;
+$white-color: #FFFFFF;
+$dark-color: #111928;
+$font-weights: (
+    'regular': 400,
+    'medium': 500,
+);
+$font-families: (
+    'primary': 'Inter',
+    'secondary': 'Lexend',
+);
+
+@function pickWeight($weight-name) {
+    @return map-get($font-weights, $weight-name)
+};
+
+@function pickFamily($family-name) {
+    @return map-get($font-families, $family-name)
+};
+
+@mixin flexAlignment($align, $direction) {
+    display: flex;
+    justify-content: $align;
+    flex-direction: $direction;
+}

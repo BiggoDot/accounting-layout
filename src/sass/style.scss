@@ -1,4 +1,5 @@
+@import 'reset';
+@import 'config';
 @import 'font';
-.body{
-    font-family: 'Inter', 'Lexend', Arial, sans-serif;
-}
+@import 'body';
+@import 'header';

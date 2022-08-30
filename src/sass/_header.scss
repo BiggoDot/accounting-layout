@@ -1,0 +1,21 @@
+.header {
+    @include flexAlignment(space-between, row);
+    align-items: center;
+}
+
+.header__link {
+    font-weight: pickWeight(regular);
+    font-family: pickFamily(primary);
+    font-size: 14px;
+    color: $dark-color;
+    margin-right: 10px;
+
+    &:last-of-type {
+        margin-right: 30px; 
+    }
+}
+
+.header__logo {
+    width: 64px;
+
+}
