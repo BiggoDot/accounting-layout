@@ -6,9 +6,11 @@
     "author": "biggoDot",
     "scripts": {
       "build:sass": "sass  --no-source-map src/sass:public/css",
+      "copy:fonts": "copyfiles -u 1 ./src/fonts/* public",
       "copy:images": "copyfiles -u 1 ./src/images/**/* public",
       "copy:html": "copyfiles -u 1 ./src/*.html public",
       "copy": "npm-run-all --parallel copy:*",
+      "watch:fonts": "onchange \"src/fonts/*\" -- npm run copy:html",
       "watch:images": "onchange \"src/images/**/*\" -- npm run copy:html",
       "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
       "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
