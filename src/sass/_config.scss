@@ -3,10 +3,12 @@ $white-color: #FFFFFF;
 $dark-color: #111928;
 $dark-color-hover: #11192810;
 $blue-color-hover: #1c63f2c4;
+$grey-color: #4B5563;
 $font-weights: (
     'regular': 400,
     'medium': 500,
 );
+
 $font-families: (
     'primary': 'Inter',
     'secondary': 'Lexend',
@@ -20,8 +22,18 @@ $font-families: (
     @return map-get($font-families, $family-name)
 };
 
+@mixin fontInter {
+    font-weight: pickWeight(regular);
+    font-family: pickFamily(primary);
+}
+
+@mixin fontLexend {
+    font-family: pickFamily(secondary);
+    font-weight: pickWeight(medium);
+}
+
 @mixin flexAlignment($align, $direction) {
     display: flex;
     justify-content: $align;
     flex-direction: $direction;
-}
+};

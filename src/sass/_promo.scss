@@ -1,0 +1,24 @@
+.promo {
+    @include flexAlignment(center, column);
+    max-width: 730px;
+    align-items: center;
+}
+
+.promo__title {
+    @include fontLexend;
+    font-size: 69px;
+    line-height: 81px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.promo__high-light {
+    color: $blue-color;
+}
+
+.promo__text {
+    color: $grey-color;
+    text-align: center;
+    max-width: 670px;
+}
