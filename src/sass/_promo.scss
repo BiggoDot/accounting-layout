@@ -21,4 +21,24 @@
     color: $grey-color;
     text-align: center;
     max-width: 670px;
+    margin-bottom: 50px;
+}
+
+.promo__button {
+    background-color: $dark-color;
+    border: none;
+    // outline: 2px solid $dark-color;
+    color: $white-color;
+    cursor: pointer;
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 140px;
+
+    &:hover {
+        transition: 0.4s;
+        background-color: $dark-color-hover;
+        color: $dark-color
+    }
+
 }

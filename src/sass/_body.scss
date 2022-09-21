@@ -3,4 +3,8 @@
     scroll-behavior: smooth;
     @include flexAlignment(center, column);
     align-items: center;
+    
 }
+ html .body {
+    scroll-behavior: smooth;
+ }
